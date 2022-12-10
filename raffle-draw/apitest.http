@@ -1,0 +1,51 @@
+GET http://localhost:4444/health
+
+###
+
+GET http://localhost:4444/api/v1/tickets
+
+###
+POST http://localhost:4444/api/v1/tickets/bulk
+Content-Type: application/json
+
+{
+   "username": "ra",
+   "price": 20,
+   "quantity": 10
+}
+
+###
+GET http://localhost:4444/api/v1/tickets/t/wTFxmMH3X
+
+
+
+###
+GET http://localhost:4444/api/v1/tickets/u/rabby
+
+###
+
+GET http://localhost:4444/api/v1/tickets/draw?wc=3
+
+
+###
+
+PUT http://localhost:4444/api/v1/tickets/t/wTFxmMH3X
+Content-Type: application/json
+
+{
+   "username": "rabby",
+   "price": 10,
+   "quantity": 10
+}
+
+
+###
+
+PUT http://localhost:4444/api/v1/tickets/u/rabby
+Content-Type: application/json
+
+{
+   "username": "abu",
+   "price": 10,
+   "quantity": 5
+}
